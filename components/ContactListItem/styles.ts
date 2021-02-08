@@ -23,14 +23,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 15,
     },
-    lastmessage: {
-        fontSize: 16,
-        color: 'grey',
-    },
-    time: {
-        fontSize: 14,
-        color: 'grey',
-    }
 })
 
 export default styles; 
