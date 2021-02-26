@@ -24,6 +24,7 @@ Search online and follow the installation
 
 ## Install Brew
 Open a terminal window
+
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ## Installing node
@@ -34,16 +35,24 @@ npm install -g expo-cli
 
 ## Create a project
 expo init ChatApp
+
 Choose Tabs Typescript
+
 ..This will install Javascript dependency
 
 ## Install the following on vscode extentions
 You should be able to do this with vscode Extensions icon on the left
+
 vim 
+
 React Native Tools
+
 Babel JavaScript
+
 Flow Language Support 
+
 ESLint 
+
 Prettier
 
 ## Install Android Studio
@@ -54,7 +63,7 @@ This will take a long time
 
 ## Install React Navigation components for this project 
 npm install @react-navigation/material-top-tabs
+
 npm install react-native-tab-view
+
 npm install react-native-reanimated
-
-
