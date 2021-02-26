@@ -128,7 +128,8 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 ### ChatScreen
 - Import chatRoom data from components/data folder
 - Using FlatList list them up
-- Use ChatListItem sub component to list each one of them with similar alignment
+- Use ChatListItem sub component to list each one of the ChatRoom with similar alignment
+- Also put a icon for starting a new chat session from your list of Contacts, if clicked this will branch out to Contact Screen
 
 ### ChatListItem Helper function
 - This is created to call for each item and diplay consistantly, FlatList will make the call
@@ -148,4 +149,13 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 - Displaying attachment icon, camera and finally the micro phone icon, all having TouchableOpacity (i.e., onPress) function calls
 - on-Press local function will be created to send data back to back-end as well as maintaining a State object locally
 
+### NewMessageButton component
+- This is just launch Contact Screen when Pressed
 
+### Contact Screen
+- Using FlatList list out the contacts from contact data file from components folder
+- Use ContactListItem helper function
+
+### ContactListItem helper function
+- This will simply get the image for avator via a URI and name, last message if any 
+- ...more to come
