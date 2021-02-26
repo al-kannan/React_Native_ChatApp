@@ -85,7 +85,7 @@ Expo init will create a bunch of files, below are the explanation
 - assets folder will contain fonts and images used by the App
 - There other .gitignore, .vscode and .expo are maintained by tools
 
-# Program Logic
+# How Expo Works
 when we run "npm start" it actually start expo.
 
 Expo comes with browser DevTools and Metro bundler
@@ -102,4 +102,43 @@ For physical device run, we need to download Expo app from the app store and the
 
 On the Vscode if we change code and save, Expo will refresh the app on virtual/physical device
 
+# Program Logic
+### The entry point is the App.tsx
+- export default function App() is basically the main function
+- import statubar, react, safeareaprovider components
+- import Navigation component from custom navigation_index file
+- send the jsx content that comes out of the Navigation component
+- Navigation component will wrap landing screen and then all subsequent screen and data
+
+### Navigation_index file
+- Import NavigationContainer, createStackNavigator, icons
+- Import re-usable custom components like MainTabNavigator
+- Import branch out screens
+- Navigation function
+-- Wrap with NavigationContainer jsx that comes out of RootNavigator
+- RootNavigator
+-- This function will send back jsx lines with 
+-- Stack.Navigator is the wrapper with color, header, layout, Stack.Screens
+-- Stack Screens include MainTabNavigator, ChatRoomScreen, ContactScreen and NotFound screen
+
+### MainTabNavigator
+- This is the one that displays the top level menu for navigation
+- Navigation bar title, icons on the right and menu items beneath, each one will have a link to screens
+
+### ChatScreen
+- Import chatRoom data from components/data folder
+- Using FlatList list them up
+- Use ChatListItem sub component to list each one of them with similar alignment
+
+### ChatListItem
+- This is created to call for each item and diplay consistantly, FlatList will make the call
+- Key point here is for each line item upon clicking the navigation.navigate will be called with props
+- Basically batch out to the respective ChatRoom Screen
+
+### ChatRoom Screen
+- Import chatRoomData from components/data folder
+- Using FlagList list the chat messages, use a helper module to display the messages
+
+### ChatMessage helper function
+- Basically jsx to display message, timing, left/right justification, your message versus other's message etc., 
 
