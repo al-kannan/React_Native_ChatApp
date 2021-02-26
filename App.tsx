@@ -8,6 +8,10 @@ import useColorScheme from './hooks/useColorScheme';
 //import Navigation from './navigation/navigation_index';
 import Navigation from './navigation/navigation_index';
 
+import Amplify from "aws-amplify";
+import awsExports from "./src/aws-exports";
+Amplify.configure(awsExports);
+
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();

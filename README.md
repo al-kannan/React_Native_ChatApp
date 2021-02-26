@@ -159,3 +159,9 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 ### ContactListItem helper function
 - This will simply get the image for avator via a URI and name, last message if any 
 - ...more to come
+
+
+# AWS Backend
+## Amplify
+### Install
+npm install -g @aws-amplify/cli
