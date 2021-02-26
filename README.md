@@ -85,3 +85,21 @@ Expo init will create a bunch of files, below are the explanation
 - assets folder will contain fonts and images used by the App
 - There other .gitignore, .vscode and .expo are maintained by tools
 
+# Program Logic
+when we run "npm start" it actually start expo.
+
+Expo comes with browser DevTools and Metro bundler
+
+Expo Start will start a listener at port 19000 at your local PC/Laptop
+
+Expo DevTools allows you to launch iOS simulator and Android emulator and run the App. Besides console log will be captured by DevTools and shown on stdout and on the browser
+
+MetroBundler is the one that talks to virtual/physical device
+
+
+
+For physical device run, we need to download Expo app from the app store and then scan the QR code that is shown on the stdout from npm start command
+
+On the Vscode if we change code and save, Expo will refresh the app on virtual/physical device
+
+
