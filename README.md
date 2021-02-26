@@ -115,11 +115,11 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 - Import re-usable custom components like MainTabNavigator
 - Import branch out screens
 - Navigation function
--- Wrap with NavigationContainer jsx that comes out of RootNavigator
+- - Wrap with NavigationContainer jsx that comes out of RootNavigator
 - RootNavigator
--- This function will send back jsx lines with 
--- Stack.Navigator is the wrapper with color, header, layout, Stack.Screens
--- Stack Screens include MainTabNavigator, ChatRoomScreen, ContactScreen and NotFound screen
+- - This function will send back jsx lines with 
+- - Stack.Navigator is the wrapper with color, header, layout, Stack.Screens
+- - Stack Screens include MainTabNavigator, ChatRoomScreen, ContactScreen and NotFound screen
 
 ### MainTabNavigator
 - This is the one that displays the top level menu for navigation
