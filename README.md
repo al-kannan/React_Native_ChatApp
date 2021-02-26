@@ -146,4 +146,6 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 - This is part of the ChatRoom Message screen, after listing past messages InputBox will appear at the end
 - This will contain the jsx View to display TextInput component, displaying smile icon in the left
 - Displaying attachment icon, camera and finally the micro phone icon, all having TouchableOpacity (i.e., onPress) function calls
-- on-Press local function will be created to send data back to back-end as well as maintaining a State object
+- on-Press local function will be created to send data back to back-end as well as maintaining a State object locally
+
+
