@@ -33,13 +33,6 @@ brew install node
 ## Install expo-cli
 npm install -g expo-cli
 
-## Create a project
-expo init ChatApp
-
-Choose Tabs Typescript
-
-..This will install Javascript dependency
-
 ## Install the following on vscode extentions
 You should be able to do this with vscode Extensions icon on the left
 
@@ -67,3 +60,28 @@ npm install @react-navigation/material-top-tabs
 npm install react-native-tab-view
 
 npm install react-native-reanimated
+
+## Create a project
+expo init ChatApp
+
+Choose Tabs Typescript
+
+..This will install Javascript dependency
+
+# Project File Contents
+Expo init will create a bunch of files, below are the explanation
+
+- App.tsx is the main file, this is the starting point
+- app.json is the configuration file for the application
+- package.json is the file that contains React Native packages that are installed part of this project
+- package-lock.json locks in a verion for each package to maintain consistence in app behaviour
+- tsconfig.json is the TypeScript configuration
+- types.tsx is the file which will contain TypeScript types which will be used throughtout the code
+- screens folder will contain different screens of the App
+- navigation folder will contain navigation related components
+- hooks folder will contain shared hooks components
+- constants folder will contain App constants
+- components folder will contain sub-folders for reusable components with its style and data related components
+- assets folder will contain fonts and images used by the App
+- There other .gitignore, .vscode and .expo are maintained by tools
+
