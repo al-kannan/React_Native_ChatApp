@@ -130,7 +130,7 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 - Using FlatList list them up
 - Use ChatListItem sub component to list each one of them with similar alignment
 
-### ChatListItem
+### ChatListItem Helper function
 - This is created to call for each item and diplay consistantly, FlatList will make the call
 - Key point here is for each line item upon clicking the navigation.navigate will be called with props
 - Basically batch out to the respective ChatRoom Screen
@@ -142,3 +142,8 @@ On the Vscode if we change code and save, Expo will refresh the app on virtual/p
 ### ChatMessage helper function
 - Basically jsx to display message, timing, left/right justification, your message versus other's message etc., 
 
+### InputBox component
+- This is part of the ChatRoom Message screen, after listing past messages InputBox will appear at the end
+- This will contain the jsx View to display TextInput component, displaying smile icon in the left
+- Displaying attachment icon, camera and finally the micro phone icon, all having TouchableOpacity (i.e., onPress) function calls
+- on-Press local function will be created to send data back to back-end as well as maintaining a State object
