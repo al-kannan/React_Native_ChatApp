@@ -12,6 +12,16 @@ import LinkingConfiguration from './LinkingConfiguration';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
 import ContactScreen from '../screens/ContactScreen';
 
+import { Auth } from 'aws-amplify';
+
+async function signOut() {
+    try {
+        await Auth.signOut();
+    } catch (error) {
+        console.log('error signing out: ', error);
+    }
+}
+
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
@@ -50,7 +60,7 @@ function RootNavigator() {
         headerRight: () => {
           return <View style={{flexDirection: 'row', width:60, justifyContent: 'space-between', marginRight:10}} >
             <Octicons name="search" size={24} color={'white'} />
-            <MaterialCommunityIcons name="dots-vertical" size={24} color={'white'} />
+            <MaterialCommunityIcons name="dots-vertical" size={24} color={'white'} onPress={signOut} />
           </View>;
         }
       }}
